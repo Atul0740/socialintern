@@ -1,0 +1,94 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 70px;
+    height: 100px;
+    width: calc(100% - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #1F2025;
+    z-index: 50;
+    box-shadow: 0px 1px 2px #3d3d3d;
+}
+
+.header.blur {
+    filter: blur(3px);
+    opacity: 0.6;
+}
+
+.header .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.header .left h1 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.header .left h3 {
+    color: #2f98f6;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.header .right {
+    color: #fff;
+}
+
+.header .right .top {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-end;
+    /* margin-bottom: 10px; */
+    /* width: 100%; */
+}
+
+.header .right .top .user {
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.header .right .top .user h3 {
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.header .right .bottom .add-btn {
+    background-color: #2f98f6;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.header .right .bottom .searchbar {
+    position: relative;
+}
+
+.header .right .bottom .searchbar input {
+    height: 100%;
+    width: 250px;
+    padding: 5px 10px 5px 30px;
+    border: 1px solid #5a5a5a;
+    border-radius: 8px;
+    margin-left: 10px;
+    font-size: 15px;
+    background-color: #1F2025;
+    color: #fff;
+}
+
+.header .right .bottom .searchbar .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+}
